@@ -1,0 +1,16 @@
+{
+    "dbqueries" : [
+        {"query": "select count(*) from dual",
+         "name": "Test1",
+         "dbcollector": "",
+         "dbtype": "ORACLE",
+         "frequency": "1"
+        },
+        {"query": "select count(*) from dual",
+         "name": "Test2",
+         "dbcollector": "",
+         "dbtype": "ORACLE",
+         "frequency": "1"
+        }
+    ]
+}
