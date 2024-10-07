@@ -22,9 +22,9 @@ def retrieve_token(client_id, client_secret, controller_url):
 
 
 def main(argv):
-    controller_url = os.environ('CONTROLLER_URL')
-    client_id = os.environ('CLIENT_ID')
-    client_secret = os.environ('CLIENT_SECRET')
+    controller_url = os.environ["CONTROLLER_URL"]
+    client_id = os.environ["CLIENT_ID"]
+    client_secret = os.environ["CLIENT_SECRET"]
 
     # Open the JSON file
     with open('db_input.json', 'r') as f:
