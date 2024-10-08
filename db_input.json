@@ -2,13 +2,13 @@
     "dbqueries" : [
         {"query": "select count(*) from dual",
          "name": "Test1",
-         "dbcollector": "",
+         "dbcollector": "paz1bnbdpl1-scan",
          "dbtype": "ORACLE",
          "frequency": "1"
         },
         {"query": "select count(*) from dual",
          "name": "Test2",
-         "dbcollector": "",
+         "dbcollector": "paz1bnbdpl1-scan",
          "dbtype": "ORACLE",
          "frequency": "1"
         }
