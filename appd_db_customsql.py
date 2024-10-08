@@ -60,7 +60,7 @@ def main(argv):
                     print(dbcollectorid)
                     break
         else:
-            print("Error Occured in retrieving DB Collector. Please check the collector is active on the controller." + dbresp.status_code)
+            raise Exception(f"API request to get database collectors failed with status code {dbresp.status_code}")
 
         proxies = {}
         verify = True
@@ -85,7 +85,7 @@ def main(argv):
         if create_resp.ok:
             print("Custom SQL Successfully created")
         else:
-            print("error occurred while creating custom sql!. Error Code: " + create_resp.status_code)
+            raise Exception(f"API request to create custom sql failed with status code {create_resp.status_code}")
         
 
 if __name__ == "__main__":
