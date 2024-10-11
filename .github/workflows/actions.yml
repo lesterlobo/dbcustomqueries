@@ -2,8 +2,8 @@ name: DBCustomQueries Script Workflow
 
 on:
   push:
-    branches:
-      - main
+    branches: ['main']
+    paths: ['dbcustomqueries/**']
 
 jobs:
   run-python-script:
